@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const base = "https://legalmeter.vercel.app";
+  const base = "https://legalmeter.in";
   return [
     { url: base, priority: 1.0 },
     { url: `${base}/gst-registration-eligibility-calculator`, priority: 1.0 },

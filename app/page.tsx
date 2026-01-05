@@ -1,9 +1,37 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import TrustBar from "@/components/TrustBar";
 
+/* ===================== */
+/* SEO META TAGS */
+/* ===================== */
+
+export const metadata: Metadata = {
+  title: "Legal Meter India – GST, Professional Tax & Compliance Calculators",
+  description:
+    "Legal Meter India provides free, rule-based compliance calculators for GST registration eligibility, professional tax, and Shop & Establishment Act requirements.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Legal Meter India – Compliance Calculators",
+    description:
+      "Rule-based Indian compliance calculators for GST, professional tax, and Shop Act eligibility. Built for founders, freelancers, and small businesses.",
+    url: "https://legalmeter.me/",
+    siteName: "Legal Meter India",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Meter India – Compliance Calculators",
+    description:
+      "Free Indian compliance calculators for GST registration, professional tax, and Shop Act eligibility.",
+  },
+};
+
 export default function HomePage() {
   return (
-    <section className="space-y-12">
+    <section className="space-y-14">
       {/* HERO */}
       <header className="text-center space-y-4">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
@@ -19,6 +47,8 @@ export default function HomePage() {
           <TrustBar />
         </div>
       </header>
+
+      {/* SEO INTRO PARAGRAPHS */}
 
       {/* TOOLS GRID */}
       <section className="grid gap-6 sm:grid-cols-2">
@@ -39,6 +69,22 @@ export default function HomePage() {
           description="Know whether your business requires Shop Act registration."
           href="/shop-act-license-eligibility"
         />
+      </section>
+      <section className="max-w-3xl mx-auto space-y-4 text-sm leading-relaxed text-slate-700">
+        <p>
+          Legal Meter India is a compliance-focused platform offering simple,
+          rule-based calculators to help Indian businesses understand key legal
+          and tax requirements. Our tools are designed to provide quick clarity
+          on mandatory registrations and statutory deductions under Indian law.
+        </p>
+
+        <p className="text-slate-600">
+          The calculators on this website cover common compliance questions
+          related to GST registration eligibility, professional tax deduction,
+          and Shop & Establishment Act requirements. All tools are based on
+          publicly available government rules and are intended for informational
+          purposes only.
+        </p>
       </section>
     </section>
   );
