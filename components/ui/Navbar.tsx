@@ -30,14 +30,14 @@ export default function Navbar() {
             href="/professional-tax-calculator"
             className="text-sm font-medium text-slate-700 hover:text-indigo-700"
           >
-            Salary Tools
+            Professional Tax Tool
           </Link>
 
           <Link
             href="/shop-act-license-eligibility"
             className="text-sm font-medium text-slate-700 hover:text-indigo-700"
           >
-            Business Compliance
+            Shop Act license Tool
           </Link>
 
           <Link
@@ -100,7 +100,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="text-sm font-medium text-slate-700"
             >
-              Salary Tools
+              Professional Tax Tools
             </Link>
 
             <Link
@@ -108,7 +108,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="text-sm font-medium text-slate-700"
             >
-              Business Compliance
+              Shop Act license Tool
             </Link>
 
             <Link

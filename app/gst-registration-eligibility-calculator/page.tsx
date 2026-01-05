@@ -42,6 +42,26 @@ export default function Page() {
               interstate services, regardless of turnover.
             </dd>
           </div>
+          <div className="rounded-lg bg-slate-50 p-4">
+            <dt className="font-semibold text-slate-900">
+              What is the GST threshold limit for services?
+            </dt>
+            <dd className="mt-1 text-slate-600 leading-relaxed">
+              For most Indian states, GST registration becomes mandatory when
+              annual turnover exceeds ₹20 lakh. For special category states, the
+              limit is ₹10 lakh.
+            </dd>
+          </div>
+          <div className="rounded-lg bg-slate-50 p-4">
+            <dt className="font-semibold text-slate-900">
+              Is GST registration mandatory for interstate supply?
+            </dt>
+            <dd className="mt-1 text-slate-600 leading-relaxed">
+              Yes, GST registration is mandatory for businesses making
+              interstate supplies, even if their turnover is below the threshold
+              limit.
+            </dd>
+          </div>
         </dl>
       </section>
 
@@ -54,6 +74,14 @@ export default function Page() {
       {/* FAQ SCHEMA */}
       <FAQSchema
         faqs={[
+          {
+            q: "Do freelancers need GST registration?",
+            a: "Freelancers must register for GST if turnover exceeds the threshold limit or if they provide interstate services.",
+          },
+          {
+            q: "What is the GST threshold limit for services?",
+            a: "Freelancers must register for GST if turnover exceeds the threshold limit or if they provide interstate services.",
+          },
           {
             q: "Do freelancers need GST registration?",
             a: "Freelancers must register for GST if turnover exceeds the threshold limit or if they provide interstate services.",
