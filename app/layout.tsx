@@ -60,6 +60,9 @@ export const metadata: Metadata = {
   },
 
   category: "Legal & Compliance",
+  verification: {
+    google: "5F7o2NbmepEDG_WuYuEztK-3EPcD-o0IepULhZiN2Vw",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
