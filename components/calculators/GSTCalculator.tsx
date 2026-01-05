@@ -19,10 +19,18 @@ export default function GSTCalculator() {
   const [result, setResult] = useState<GSTResult | null>(null);
 
   return (
-    <section
+    <article
       aria-labelledby="gst-calculator-heading"
       className="max-w-xl mx-auto"
     >
+      {/* INTRO PARAGRAPH */}
+      <p className="mb-4 text-sm leading-relaxed text-slate-700">
+        This GST registration eligibility calculator helps Indian freelancers,
+        startups, and small businesses quickly check whether GST registration is
+        mandatory based on their income, state, and business type, as per
+        current Indian GST rules.
+      </p>
+
       {/* TOOL CARD */}
       <div className="rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 p-8 shadow-sm space-y-8">
         {/* TITLE */}
@@ -42,10 +50,15 @@ export default function GSTCalculator() {
         <div className="space-y-5">
           {/* Monthly Income */}
           <div className="flex items-center justify-between gap-4">
-            <label className="text-sm font-medium text-slate-700">
+            <label
+              htmlFor="monthly-income"
+              className="text-sm font-medium text-slate-700"
+            >
               Monthly income (₹)
             </label>
             <input
+              id="monthly-income"
+              name="monthly-income"
               type="number"
               min={0}
               value={form.income}
@@ -58,8 +71,15 @@ export default function GSTCalculator() {
 
           {/* State */}
           <div className="flex items-center justify-between gap-4">
-            <label className="text-sm font-medium text-slate-700">State</label>
+            <label
+              htmlFor="state"
+              className="text-sm font-medium text-slate-700"
+            >
+              State
+            </label>
             <select
+              id="state"
+              name="state"
               value={form.state}
               onChange={(e) => setForm({ ...form, state: e.target.value })}
               className="w-44 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600"
@@ -75,10 +95,15 @@ export default function GSTCalculator() {
 
           {/* Start Month */}
           <div className="flex items-center justify-between gap-4">
-            <label className="text-sm font-medium text-slate-700">
+            <label
+              htmlFor="start-month"
+              className="text-sm font-medium text-slate-700"
+            >
               Business start month
             </label>
             <input
+              id="start-month"
+              name="start-month"
               type="month"
               value={form.startMonth}
               onChange={(e) => setForm({ ...form, startMonth: e.target.value })}
@@ -88,10 +113,15 @@ export default function GSTCalculator() {
 
           {/* Interstate */}
           <div className="flex items-center justify-between gap-4">
-            <label className="text-sm font-medium text-slate-700">
+            <label
+              htmlFor="interstate"
+              className="text-sm font-medium text-slate-700"
+            >
               Interstate supply
             </label>
             <input
+              id="interstate"
+              name="interstate"
               type="checkbox"
               checked={form.interstate}
               onChange={(e) =>
@@ -117,7 +147,6 @@ export default function GSTCalculator() {
           aria-live="polite"
           className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm space-y-4"
         >
-          {/* STATUS */}
           <div className="flex items-center justify-between">
             <span className="text-sm font-medium text-slate-600">
               GST registration required
@@ -133,7 +162,6 @@ export default function GSTCalculator() {
             </span>
           </div>
 
-          {/* THRESHOLD */}
           <div className="flex items-center justify-between">
             <span className="text-sm text-slate-600">
               Applicable turnover threshold
@@ -143,7 +171,6 @@ export default function GSTCalculator() {
             </span>
           </div>
 
-          {/* DATE – HIGHLIGHTED */}
           <div className="rounded-xl bg-slate-50 border border-slate-200 p-4">
             <p className="text-xs uppercase tracking-wide text-slate-500">
               GST mandatory from
@@ -153,12 +180,51 @@ export default function GSTCalculator() {
             </p>
           </div>
 
-          {/* EXPLANATION (INDEXABLE SEO TEXT) */}
           <p className="text-sm leading-relaxed text-slate-700">
             {result.explanation}
           </p>
+
+          <p className="text-xs leading-relaxed text-slate-600">
+            Even if your turnover is below the GST threshold, GST registration
+            may still be mandatory if you make interstate supplies or provide
+            services through an e-commerce platform, as per GST law.
+          </p>
         </section>
       )}
-    </section>
+
+      {/* FAQ SECTION */}
+      <section className="mt-10 space-y-5">
+        <h3 className="text-base font-semibold text-slate-900">
+          Frequently Asked Questions
+        </h3>
+
+        <div className="space-y-3 text-sm text-slate-700">
+          <p>
+            <strong>Do freelancers need GST registration in India?</strong>
+            <br />
+            Freelancers are required to register for GST if their annual
+            turnover exceeds the applicable threshold limit or if they provide
+            interstate services.
+          </p>
+
+          <p>
+            <strong>What is the GST threshold limit for services?</strong>
+            <br />
+            For most Indian states, GST registration becomes mandatory when
+            annual turnover exceeds ₹20 lakh. For special category states, the
+            limit is ₹10 lakh.
+          </p>
+
+          <p>
+            <strong>
+              Is GST registration mandatory for interstate supply?
+            </strong>
+            <br />
+            Yes, GST registration is mandatory for businesses making interstate
+            supplies, even if their turnover is below the threshold limit.
+          </p>
+        </div>
+      </section>
+    </article>
   );
 }
