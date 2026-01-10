@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Navbar from "@/components/ui/Navbar";
+import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
