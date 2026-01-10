@@ -36,6 +36,7 @@ export default function sitemap() {
       url: `${base}/articles/how-to-apply/aadhaar-card-update-online`,
       priority: 0.8,
     },
+   
 
     // OTHER ARTICLES
     {
@@ -48,6 +49,10 @@ export default function sitemap() {
     },
     {
       url: `${base}/articles/how-to-write-legal-notice`,
+      priority: 0.8,
+    },
+    {
+      url: `${base}/articles/wpl-women-athlete-rights`,
       priority: 0.8,
     },
   ];
