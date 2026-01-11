@@ -55,6 +55,10 @@ export default function sitemap() {
       url: `${base}/articles/wpl-women-athlete-rights`,
       priority: 0.8,
     },
+    {
+      url: `${base}/articles/ind-vs-nz-legal-guide`,
+      priority: 0.8,
+    },
   ];
 
   // COMBINE EVERYTHING WITH SEO PROPERTIES
