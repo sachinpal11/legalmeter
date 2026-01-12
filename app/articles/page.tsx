@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/layout/ArticleLayout";
 import Heading from "@/components/layout/Heading";
+import { articlesData } from "./ArticleData";
 
-/* CATEGORY CARD COMPONENT (reuse with no JS) */
+/* Reusable Article Card */
 function ArticleCard({
   title,
   desc,
@@ -29,17 +30,15 @@ function ArticleCard({
   );
 }
 
-/* PAGE METADATA */
 export const metadata: Metadata = {
   title: "Legal Articles & Guides (2026) | LegalMeter India",
   description:
-    "Browse LegalMeter's 2026 collection of simple, step-by-step legal guides: police complaints, FIR, legal notices, Aadhaar updates, PAN, Passport applications, and more.",
+    "Browse LegalMeter's 2026 library of legal guides: police complaints, FIR, legal notices, Aadhaar updates, PAN, Passport, trending laws, and government document updates.",
   alternates: {
     canonical: "https://legalmeter.in/articles",
   },
 };
 
-/* MAIN PAGE */
 export default function Page() {
   return (
     <ArticleLayout
@@ -50,102 +49,96 @@ export default function Page() {
         { id: "intro", label: "Introduction" },
         { id: "apply", label: "How to Apply (Documents)" },
         { id: "legal", label: "Legal Help Guides" },
-        { id: "identity", label: "Identity Document Updates" },
+        { id: "identity", label: "Identity Updates" },
+        { id: "trending", label: "Trending Topics" },
+        { id: "updates", label: "2026 Updates" },
       ]}
     >
-      {/* --------------------------- INTRO --------------------------- */}
+      {/* INTRO */}
       <section id="intro">
         <Heading id="intro">Introduction</Heading>
         <p className="mt-3 text-slate-700 leading-relaxed">
-          Find simple, step-by-step legal and government service guides designed
-          specifically for Indian citizens. Every article is written in easy
-          language with clear instructions, official links, and documents
-          required.
+          Explore simplified legal and documentation guides for Indian citizens.
+          These articles include step-by-step instructions, official links,
+          documents required, and state-wise procedures—written in clean,
+          beginner-friendly language.
         </p>
       </section>
 
       <div className="my-10 border-t" />
 
-      {/* --------------------------- HOW TO APPLY --------------------------- */}
+      {/* APPLY */}
       <section id="apply">
         <Heading id="apply">How to Apply (Government Documents)</Heading>
 
         <div className="mt-6 grid sm:grid-cols-2 gap-6">
-          <ArticleCard
-            title="Apply Passport Online (2026)"
-            desc="Step-by-step guide to applying for a new passport or renewing an old one through Passport Seva."
-            href="/articles/how-to-apply/apply-passport-online"
-          />
-
-          <ArticleCard
-            title="Apply PAN Card Online"
-            desc="How to apply for PAN using Aadhaar eKYC through NSDL or UTI portals. Documents and fees included."
-            href="/articles/how-to-apply/apply-pan-card-online"
-          />
-
-          <ArticleCard
-            title="Aadhaar Card Update Online"
-            desc="Change address, name, DoB, or mobile number. Full UIDAI step-by-step update guide."
-            href="/articles/how-to-apply/aadhaar-card-update-online"
-          />
+          {articlesData
+            .filter((a) => a.category === "apply")
+            .map((item, i) => (
+              <ArticleCard key={i} {...item} />
+            ))}
         </div>
       </section>
 
       <div className="my-10 border-t" />
 
-      {/* --------------------------- LEGAL HELP --------------------------- */}
+      {/* LEGAL HELP */}
       <section id="legal">
         <Heading id="legal">Legal Help Guides</Heading>
 
         <div className="mt-6 grid sm:grid-cols-2 gap-6">
-          <ArticleCard
-            title="How to File a Police Complaint Online"
-            desc="Learn how to submit a police complaint digitally through your state police portal."
-            href="/articles/file-police-complaint-online"
-          />
-
-          <ArticleCard
-            title="How to Check FIR Status Online"
-            desc="Guide to checking your FIR status on official state police and CCTNS portals."
-            href="/articles/check-fir-status-online"
-          />
-
-          <ArticleCard
-            title="How to Write a Legal Notice"
-            desc="Simple legal notice format, structure, tips, and when to send it to protect your rights."
-            href="/articles/how-to-write-legal-notice"
-          />
+          {articlesData
+            .filter((a) => a.category === "legal")
+            .map((item, i) => (
+              <ArticleCard key={i} {...item} />
+            ))}
         </div>
       </section>
 
       <div className="my-10 border-t" />
 
-      {/* --------------------------- IDENTITY DOCS --------------------------- */}
+      {/* IDENTITY UPDATES */}
       <section id="identity">
         <Heading id="identity">Identity Document Updates</Heading>
 
         <div className="mt-6 grid sm:grid-cols-2 gap-6">
-          <ArticleCard
-            title="Aadhaar Update Guide (UIDAI)"
-            desc="Update Aadhaar demographic details like address, name, date of birth, etc."
-            href="/articles/how-to-apply/aadhaar-card-update-online"
-          />
-
-          <ArticleCard
-            title="PAN Card Correction Guide"
-            desc="Correct name, date of birth, signature, or address in your PAN card online."
-            href="/articles/how-to-apply/apply-pan-card-online"
-          />
-
-          <ArticleCard
-            title="Passport Reissue Process"
-            desc="When and how to reissue a passport due to expiry, lost passport, or printing errors."
-            href="/articles/how-to-apply/apply-passport-online"
-          />
+          {articlesData
+            .filter((a) => a.category === "identity")
+            .map((item, i) => (
+              <ArticleCard key={i} {...item} />
+            ))}
         </div>
       </section>
 
-      {/* (FAQ section optional — add if needed) */}
+      <div className="my-10 border-t" />
+
+      {/* TRENDING */}
+      <section id="trending">
+        <Heading id="trending">Trending Legal Topics</Heading>
+
+        <div className="mt-6 grid sm:grid-cols-2 gap-6">
+          {articlesData
+            .filter((a) => a.category === "trending")
+            .map((item, i) => (
+              <ArticleCard key={i} {...item} />
+            ))}
+        </div>
+      </section>
+
+      <div className="my-10 border-t" />
+
+      {/* 2026 UPDATES */}
+      <section id="updates">
+        <Heading id="updates">Latest 2026 Government Document Updates</Heading>
+
+        <div className="mt-6 grid sm:grid-cols-2 gap-6">
+          {articlesData
+            .filter((a) => a.category === "updates")
+            .map((item, i) => (
+              <ArticleCard key={i} {...item} />
+            ))}
+        </div>
+      </section>
     </ArticleLayout>
   );
 }
