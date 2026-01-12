@@ -18,17 +18,21 @@ const poppins = Poppins({
  * Applies to all pages unless overridden at page level
  */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://legalmeter.in"), // ✅ change if domain differs
+  metadataBase: new URL("https://legalmeter.in"),
+
   title: {
-    default: "Legal Meter India – Compliance Calculators",
-    template: "%s | Legal Meter India",
+    default:
+      "LegalMeter India – Legal Guides, Document Help & Compliance Tools",
+    template: "%s | LegalMeter India",
   },
+
   description:
-    "Legal Meter provides India-specific compliance calculators including GST registration eligibility, professional tax deduction, and Shop & Establishment Act tools.",
-  applicationName: "Legal Meter India",
-  authors: [{ name: "Legal Meter India" }],
-  creator: "Legal Meter India",
-  publisher: "Legal Meter India",
+    "LegalMeter India offers simple legal guides, government document help (Passport, PAN, Aadhaar), police & cybercrime procedures, and compliance calculators. Trusted step-by-step articles for Indian citizens. Updated for 2026.",
+
+  applicationName: "LegalMeter India",
+  authors: [{ name: "LegalMeter India" }],
+  creator: "LegalMeter India",
+  publisher: "LegalMeter India",
 
   robots: {
     index: true,
@@ -47,20 +51,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://legalmeter.in",
-    siteName: "Legal Meter India",
-    title: "Legal Meter India – Compliance Calculators",
+    siteName: "LegalMeter India",
+    title: "LegalMeter India – Legal Guides, Document Help & Compliance Tools",
+
     description:
-      "Simple, rule-based legal and compliance calculators for India. GST, Professional Tax, and Shop Act eligibility tools.",
+      "Explore legal guides, how-to-apply articles, police complaint help, cybercrime steps, and compliance calculators for Indian citizens.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Legal Meter India – Compliance Calculators",
+    title: "LegalMeter India – Legal Guides, Document Help & Compliance Tools",
     description:
-      "India-focused legal and compliance calculators. GST, Professional Tax, and Shop Act tools.",
+      "India-focused legal guides, document application help, FIR/complaint steps, and compliance calculators.",
   },
 
-  category: "Legal & Compliance",
+  category: "Legal & Government Services",
+
   verification: {
     google: "5F7o2NbmepEDG_WuYuEztK-3EPcD-o0IepULhZiN2Vw",
   },

@@ -7,26 +7,61 @@ import TrustBar from "@/components/TrustBar";
 /* ===================== */
 
 export const metadata: Metadata = {
-  title: "Legal Meter India – GST, Professional Tax & Compliance Calculators",
+  metadataBase: new URL("https://legalmeter.in"),
+
+  title: {
+    default:
+      "LegalMeter India – Legal Guides, Document Help & Compliance Tools",
+    template: "%s | LegalMeter India",
+  },
+
   description:
-    "Legal Meter India provides free, rule-based compliance calculators for GST registration eligibility, professional tax, and Shop & Establishment Act requirements.",
+    "LegalMeter India offers simple legal guides, government document help (Passport, PAN, Aadhaar), police & cybercrime procedures, and compliance calculators. Trusted step-by-step articles for Indian citizens. Updated for 2026.",
+
+  applicationName: "LegalMeter India",
+  authors: [{ name: "LegalMeter India" }],
+  creator: "LegalMeter India",
+  publisher: "LegalMeter India",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
-    title: "Legal Meter India – Compliance Calculators",
-    description:
-      "Rule-based Indian compliance calculators for GST, professional tax, and Shop Act eligibility. Built for founders, freelancers, and small businesses.",
-    url: "https://legalmeter.me/",
-    siteName: "Legal Meter India",
     type: "website",
+    locale: "en_IN",
+    url: "https://legalmeter.in",
+    siteName: "LegalMeter India",
+    title: "LegalMeter India – Legal Guides, Document Help & Compliance Tools",
+    description:
+      "Explore legal guides, how-to-apply articles, police complaint help, cybercrime steps, and compliance calculators for Indian citizens.",
+    images: [
+      {
+        url: "/og/og-main.jpg",
+        width: 1200,
+        height: 630,
+        alt: "LegalMeter India – Legal Help & Guides",
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Legal Meter India – Compliance Calculators",
+    title: "LegalMeter India – Legal Guides, Document Help & Compliance Tools",
     description:
-      "Free Indian compliance calculators for GST registration, professional tax, and Shop Act eligibility.",
+      "India-focused legal guides, document application help, FIR/complaint steps, and compliance calculators.",
   },
+
+  category: "Legal & Government Services",
 };
 
 export default function HomePage() {
