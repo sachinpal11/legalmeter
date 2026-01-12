@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "https://legalmeter.in/og/latest-documents-2026.jpg",
+        url: "https://legalmeter.in/og/og-latest-document-updates-2026.jpg",
         width: 1200,
         height: 630,
         alt: "Latest Document Updates India 2026",
