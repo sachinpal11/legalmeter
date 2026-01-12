@@ -59,6 +59,10 @@ export default function sitemap() {
       url: `${base}/articles/ind-vs-nz-legal-guide`,
       priority: 0.8,
     },
+    {
+      url: `${base}/articles/latest-document-updates-2026`,
+      priority: 0.8,
+    },
   ];
 
   // COMBINE EVERYTHING WITH SEO PROPERTIES
