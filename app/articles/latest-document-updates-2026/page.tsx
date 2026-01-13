@@ -25,39 +25,39 @@ function ArrowIcon() {
 ---------------------------------------------------------------- */
 export const metadata: Metadata = {
   title:
-    "Latest Government Document Updates 2026 – Aadhaar, PAN, Passport, Driving Licence & More",
+    "2026 Document Rule Changes India — Aadhaar, PAN, Passport, DL Updates",
   description:
-    "2026 latest updates for Aadhaar, PAN Card, Passport, Driving Licence, Voter ID, Ration Card & more. New rules, deadlines, charges, online update steps, and essential compliance changes for Indian citizens.",
+    "Complete list of 2026 government document updates in India. New Aadhaar rules, PAN card changes, passport renewal updates, driving licence norms, DigiLocker rules, and KYC requirements explained.",
   keywords: [
-    "latest document updates 2026",
-    "government document updates 2026",
-    "Aadhaar update rules 2026",
-    "PAN card update 2026",
-    "passport update 2026",
-    "new KYC rules 2026 India",
-    "digital India documents 2026",
-    "ID proof update 2026",
-    "latest government rules India 2026",
-    "identity document changes 2026",
+    "2026 document rule changes",
+    "India document updates 2026",
+    "Aadhaar new rules 2026",
+    "PAN card changes 2026",
+    "passport renewal rules 2026",
+    "driving licence update 2026",
+    "DigiLocker updates 2026",
+    "KYC rules India 2026",
+    "government document changes 2026",
+    "identity document updates India 2026",
   ],
   alternates: {
     canonical: "https://legalmeter.in/articles/latest-document-updates-2026",
   },
   openGraph: {
     title:
-      "Latest Government Document Updates 2026 – Aadhaar, PAN, Passport & More",
+      "2026 Document Updates — Aadhaar, PAN, Passport, Driving Licence & More",
     description:
-      "Complete 2026 guide on Aadhaar updates, PAN rules, Passport renewals, KYC changes, DigiLocker updates, and new compliance requirements for Indian citizens.",
+      "Official 2026 update list for Aadhaar, PAN, Passport, Driving Licence, Ration Card, Voter ID, DigiLocker and key KYC rule changes for Indian citizens.",
     url: "https://legalmeter.in/articles/latest-document-updates-2026",
     siteName: "LegalMeter India",
     type: "article",
     locale: "en_IN",
     images: [
       {
-        url: "https://legalmeter.in/og/og-latest-document-updates-2026.jpg",
+        url: "/og/og-latest-document-updates-2026.jpg",
         width: 1200,
         height: 630,
-        alt: "Latest Document Updates India 2026",
+        alt: "2026 Government Document Updates India",
       },
     ],
   },
