@@ -22,38 +22,39 @@ function ArrowIcon() {
 
 export const metadata: Metadata = {
   title:
-    "WPL 2026: Legal Rights of Women Athletes in India (Salary, Contract Rules, Harassment Laws)",
+    "WPL 2026 Player Rights — Salary, Contract Rules, Harassment & Protection Laws",
   description:
-    "WPL 2026 legal guide explaining rights of women athletes in India: salaries, contracts, harassment laws, cybercrime reporting, discrimination, termination rules, and complaint filing.",
+    "Complete WPL 2026 legal guide for women athletes: salary rules, BCCI contract terms, termination rights, harassment laws, cyber abuse protection, medical compensation, and complaint filing process.",
   keywords: [
-    "WPL 2026",
-    "women athletes rights India",
-    "sports law India",
-    "BCCI contract rules",
-    "WPL salary rules",
-    "WPL players salary",
-    "athlete harassment complaint",
-    "sports legal rights India",
-    "women cricket laws",
+    "WPL 2026 player rights",
+    "WPL salary rules 2026",
+    "WPL contract rules",
+    "women athletes legal rights India",
+    "BCCI contract rules 2026",
+    "sports harassment laws India",
+    "athlete termination rights",
+    "injury compensation WPL",
+    "women cricket rights India",
+    "sports law India 2026",
   ],
   alternates: {
     canonical: "https://legalmeter.in/articles/wpl-women-athlete-rights",
   },
   openGraph: {
     title:
-      "WPL 2026: Legal Rights of Women Athletes in India (Contract, Salary, Harassment Laws)",
+      "WPL 2026 Player Rights — Salary, Contracts, Harassment & Protection Laws",
     description:
-      "Complete legal guide explaining rights of WPL women athletes: salary rules, sports contracts, harassment laws, cybercrime complaints, and equal pay laws.",
+      "Legal rights of WPL 2026 players explained: salary slabs, contract rules, release/termination policy, harassment complaint filing, cyber bullying protection, and compensation rights.",
     url: "https://legalmeter.in/articles/wpl-women-athlete-rights",
     siteName: "LegalMeter India",
     locale: "en_IN",
     type: "article",
     images: [
       {
-        url: "https://legalmeter.in/og/wpl-women-athlete-rights.jpg",
+        url: "/og/wpl-women-athlete-rights.jpg",
         width: 1200,
         height: 630,
-        alt: "WPL Women Athlete Rights",
+        alt: "WPL Women Athlete Rights 2026",
       },
     ],
   },
