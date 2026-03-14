@@ -18,9 +18,9 @@ export default function Footer() {
                 />
               </div>
               <span className="text-xl font-bold text-slate-900">LegalMeter</span>
-              <span className="text-xs text-slate-500 font-medium">India</span>
+              <span className="text-xs text-slate-600 font-medium">India</span>
             </div>
-            <p className="text-slate-500 text-sm leading-relaxed">
+            <p className="text-slate-600 text-sm leading-relaxed">
               Automated, rule-based legal logic for Indian startups. Built to help founders navigate compliance without friction.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-slate-400">
+        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-slate-500">
           <p>© {new Date().getFullYear()} LegalMeter India. All rights reserved. Professional tools, not legal advice.</p>
           <div className="flex gap-6">
             <Link className="hover:text-primary transition-colors" href="#">Twitter</Link>

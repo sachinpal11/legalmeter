@@ -17,9 +17,9 @@ export default function ComparisonSection() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/50">
-                <th className="p-6 text-xs font-bold uppercase tracking-widest text-slate-400">Parameter</th>
+                <th className="p-6 text-xs font-bold uppercase tracking-widest text-slate-500">Parameter</th>
                 <th className="p-6 text-xs font-bold uppercase tracking-widest text-primary">LegalMeter</th>
-                <th className="p-6 text-xs font-bold uppercase tracking-widest text-slate-400">Consultancy</th>
+                <th className="p-6 text-xs font-bold uppercase tracking-widest text-slate-500">Consultancy</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
@@ -27,7 +27,7 @@ export default function ComparisonSection() {
                 <tr key={idx}>
                   <td className="p-6 text-sm font-medium text-slate-600">{param.name}</td>
                   <td className="p-6 text-sm text-primary font-bold">{param.legalMeter}</td>
-                  <td className="p-6 text-sm text-slate-500">{param.consultancy}</td>
+                  <td className="p-6 text-sm text-slate-600">{param.consultancy}</td>
                 </tr>
               ))}
             </tbody>

@@ -52,7 +52,7 @@ export default function TrustSection() {
                 {feature.icon}
               </div>
               <h3 className="font-bold text-slate-900 mb-2">{feature.title}</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">{feature.description}</p>
+              <p className="text-slate-600 text-sm leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

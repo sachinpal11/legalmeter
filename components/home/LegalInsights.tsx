@@ -34,9 +34,11 @@ export default function LegalInsights() {
           {guides.map((guide, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="aspect-[16/10] rounded-2xl mb-6 overflow-hidden relative">
-                <img 
+                <Image 
                   src={guide.image} 
                   alt={guide.title}
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-[10px] font-bold text-slate-900 uppercase tracking-wider">{guide.category}</div>

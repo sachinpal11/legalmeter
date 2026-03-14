@@ -53,7 +53,7 @@ export default function ToolsSection() {
         <div className="grid lg:grid-cols-3 gap-8">
           {tools.map((tool, idx) => (
             <div key={idx} className="group bg-white p-8 rounded-2xl border border-slate-200/60 shadow-premium hover:shadow-premium-hover hover:border-primary/20 transition-all flex flex-col h-full">
-              <div className="w-12 h-12 text-slate-400 group-hover:text-primary transition-colors mb-6">
+              <div className="w-12 h-12 text-slate-500 group-hover:text-primary transition-colors mb-6">
                 {tool.icon}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{tool.title}</h3>
