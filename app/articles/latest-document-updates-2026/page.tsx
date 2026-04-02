@@ -25,7 +25,7 @@ function ArrowIcon() {
 ---------------------------------------------------------------- */
 export const metadata: Metadata = {
   title:
-    "2026 Document Rule Changes India — Aadhaar, PAN, Passport, DL Updates",
+    "New Government Document Rules 2026 — Aadhaar, PAN, Passport Changes You Must Know",
   description:
     "Complete list of 2026 government document updates in India. New Aadhaar rules, PAN card changes, passport renewal updates, driving licence norms, DigiLocker rules, and KYC requirements explained.",
   keywords: [

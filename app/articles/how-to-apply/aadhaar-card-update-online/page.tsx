@@ -21,7 +21,7 @@ function CheckIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to Update Aadhaar Card Details Online (2026 Guide)",
+  title: "Aadhaar Card Update Online 2026 — Address, Name & Mobile Number Kaise Badle (Free)",
   description:
     "Complete 2026 step-by-step guide on updating Aadhaar details online, including name, address, DoB, mobile number, and demographic updates via UIDAI.",
   alternates: {

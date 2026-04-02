@@ -19,7 +19,7 @@ function CheckIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to File a Cybercrime Complaint Online in India (2026 Guide)",
+  title: "Cybercrime Complaint Kaise Kare — Online FIR on cybercrime.gov.in (Free Guide 2026)",
   description:
     "Step-by-step guide to filing a cybercrime complaint online in India using the National Cybercrime Portal. Covers cyber fraud, online scams, harassment, and digital crime reporting.",
   keywords: [

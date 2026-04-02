@@ -19,23 +19,56 @@ function CheckIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to Check FIR Status Online in India (2026 Guide)",
+  title: "FIR Online Kaise Check Kare — Status Dekhe + PDF Download (State-wise 2026)",
+
   description:
-    "Learn how to check FIR status online in India using state police portals and the CCTNS Crime & Criminal Tracking system. Step-by-step guide with links.",
+    "Ghar baithe FIR status online check kare — state police portals aur CCTNS ke through status dekhe, PDF download kare aur case updates track kare (2026 guide).",
+
   keywords: [
-    "check FIR status online",
-    "FIR online status",
-    "CCTNS check FIR",
-    "police FIR tracking",
-    "Indian FIR search",
+    // English
+    "check FIR status online India",
+    "FIR status check online",
+    "CCTNS FIR status",
+    "police FIR tracking India",
+    "FIR copy download India",
+
+    // Hindi (Hinglish + Devanagari)
+    "FIR status kaise check kare",
+    "online FIR status kaise dekhe",
+    "एफआईआर स्टेटस कैसे चेक करें",
+    "FIR copy kaise nikale",
+
+    // Marathi
+    "एफआयआर स्थिती कशी तपासावी",
+    "एफआयआर कॉपी डाउनलोड",
+
+    // Tamil
+    "FIR நிலை எப்படி பார்க்கலாம்",
+    "FIR ஆன்லைன் நிலை சரிபார்ப்பு",
+
+    // Kannada
+    "FIR ಸ್ಥಿತಿ ಹೇಗೆ ಪರಿಶೀಲಿಸುವುದು",
+    "FIR ಆನ್‌ಲೈನ್ ಸ್ಥಿತಿ",
+
+    // Telugu
+    "FIR స్థితి ఎలా చెక్ చేయాలి",
+
+    // Bengali
+    "FIR স্ট্যাটাস কিভাবে চেক করবেন",
+
+    // Generic intent
+    "state wise FIR status check",
+    "online FIR tracking India guide",
   ],
+
   alternates: {
     canonical: "https://legalmeter.in/articles/check-fir-status-online",
   },
+
   openGraph: {
     title: "How to Check FIR Status Online in India (2026 Guide)",
     description:
-      "Complete 2026 guide to check FIR status online through state police portals and CCTNS search.",
+      "Check FIR status online using CCTNS and state police portals. Track case updates, download FIR PDF and access direct links in this 2026 guide.",
     url: "https://legalmeter.in/articles/check-fir-status-online",
     siteName: "LegalMeter India",
     locale: "en_IN",
@@ -50,7 +83,6 @@ export const metadata: Metadata = {
     ],
   },
 };
-
 export default function Page() {
   return (
     <>

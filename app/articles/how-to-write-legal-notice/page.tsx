@@ -19,7 +19,7 @@ function CheckIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to Write a Legal Notice in India (2026 Guide)",
+  title: "Legal Notice Kaise Likhe — Free Format + Template Download (Lawyer-Verified 2026)",
   description:
     "Step-by-step guide on writing a legal notice in India. Includes format, structure, sample notice, and legal requirements under Indian law.",
   keywords: [

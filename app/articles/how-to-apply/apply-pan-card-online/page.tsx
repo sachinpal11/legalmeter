@@ -21,7 +21,7 @@ function CheckIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to Apply for PAN Card Online in India (2026 Guide)",
+  title: "PAN Card Apply Online 2026 — New PAN, Correction & Reprint | ₹107 Fee, Instant e-PAN",
   description:
     "2026 step-by-step guide on applying for a PAN Card online in India through NSDL and UTIITSL. Includes fees, documents required, and ePAN download.",
   alternates: {

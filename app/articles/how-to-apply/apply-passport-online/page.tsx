@@ -21,7 +21,7 @@ function CheckIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to Apply for Passport Online in India (2026 Guide)",
+  title: "Passport Apply Online 2026 — Fresh & Renewal, Documents List, Fees & Appointment Booking",
   description:
     "Step-by-step 2026 guide on how to apply for a passport online in India. Includes documents required, fees, appointment booking, and official links.",
   alternates: {

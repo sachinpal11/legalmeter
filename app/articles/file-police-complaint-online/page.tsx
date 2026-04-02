@@ -33,23 +33,28 @@ function LinkIcon() {
 }
 
 export const metadata: Metadata = {
-  title: "How to File a Police Complaint Online in India (2026 Guide)",
+  title: "Online Police Complaint Kaise Kare — Step-by-Step Guide (All States 2026)",
   description:
-    "Step-by-step 2026 guide on filing an online police complaint in India. Includes portals, documents, cybercrime process, tracking, and statewise links.",
+    "Ghar baithe online police complaint kaise kare — sabhi states ke liye step-by-step guide 2026. Cybercrime, fraud, harassment report kare. FIR copy bhi download kare.",
   keywords: [
-    "file police complaint online",
-    "online police complaint India",
-    "cybercrime complaint",
+    "online police complaint kaise kare",
+    "online complaint kaise kare police mein",
+    "file police complaint online India",
+    "ऑनलाइन पोलीस तक्रार कशी करावी",
+    "cybercrime complaint India",
     "police portal India",
     "FIR online India",
+    "தமிழ்நாடு போலீஸ் ஆன்லைன் புகார்",
+    "ಪೊಲೀಸ್ ಠಾಣೆಗೆ ಅರ್ಜಿ",
+    "online police complaint kaise kare",
   ],
   alternates: {
     canonical: "https://legalmeter.in/articles/file-police-complaint-online",
   },
   openGraph: {
-    title: "How to File a Police Complaint Online in India (2026 Guide)",
+    title: "Online Police Complaint Kaise Kare — Step-by-Step Guide (All States 2026)",
     description:
-      "Complete 2026 guide to file police and cybercrime complaints online in India with official links.",
+      "Ghar baithe online police complaint kare — Cybercrime, theft, fraud. State-wise direct links. FIR copy download kare. Free 2026 guide.",
     url: "https://legalmeter.in/articles/file-police-complaint-online",
     siteName: "LegalMeter India",
     locale: "en_IN",
@@ -59,7 +64,7 @@ export const metadata: Metadata = {
         url: "https://legalmeter.in/og/police-complaint-guide.jpg",
         width: 1200,
         height: 630,
-        alt: "How to File Police Complaint Online",
+        alt: "Online Police Complaint Kaise Kare — 2026 Guide",
       },
     ],
   },
