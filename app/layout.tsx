@@ -25,6 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <meta name="google-site-verification" content="5F7o2NbmepEDG_WuYuEztK-3EPcD-o0IepULhZiN2Vw" />
       </head>
       <body
         className="bg-white text-slate-900 font-sans antialiased"
