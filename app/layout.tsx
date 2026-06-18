@@ -46,7 +46,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         suppressHydrationWarning
       >
         <Analytics />
-        <GoogleAnalytics gaId="G-6B7VNDKLTZ" />
         <Navbar />
         <main id="main-content" suppressHydrationWarning>
           {children}
